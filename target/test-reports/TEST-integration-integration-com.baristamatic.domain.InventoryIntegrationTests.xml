@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="dsday3636" name="com.baristamatic.domain.InventoryIntegrationTests" tests="3" time="0.25" timestamp="2011-01-21T00:21:17">
+  <properties />
+  <testcase classname="com.baristamatic.domain.InventoryIntegrationTests" name="testInventoryEntry" time="0.094" />
+  <testcase classname="com.baristamatic.domain.InventoryIntegrationTests" name="testAll" time="0.078" />
+  <testcase classname="com.baristamatic.domain.InventoryIntegrationTests" name="testInventoryEntryDto" time="0.063" />
+  <system-out><![CDATA[--Output from testInventoryEntry--
+--Output from testAll--
+--Output from testInventoryEntryDto--
+]]></system-out>
+  <system-err><![CDATA[--Output from testInventoryEntry--
+--Output from testAll--
+--Output from testInventoryEntryDto--
+]]></system-err>
+</testsuite>

@@ -1,0 +1,6 @@
+##ERD
+
+Drink -- one-to-many -- RecipeEntry -- one-to-one -- RecipeItem -- one-to-one -- InventoryItem 
+
+#Grails-Flex Plugin doc at:
+   http://sebastien-arbogast.com/2010/01/28/grails-blazeds-4-integration-plugin/

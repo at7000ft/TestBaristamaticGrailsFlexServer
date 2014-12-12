@@ -1,0 +1,16 @@
+Testsuite: com.baristamatic.domain.InventoryIntegrationTests
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.25 sec
+------------- Standard Output ---------------
+--Output from testInventoryEntry--
+--Output from testAll--
+--Output from testInventoryEntryDto--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testInventoryEntry--
+--Output from testAll--
+--Output from testInventoryEntryDto--
+------------- ---------------- ---------------
+
+Testcase: testInventoryEntry took 0.094 sec
+Testcase: testAll took 0.078 sec
+Testcase: testInventoryEntryDto took 0.063 sec

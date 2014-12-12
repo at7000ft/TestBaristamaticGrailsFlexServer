@@ -1,0 +1,7 @@
+--Output from testDrinkSave--
+--Output from testDrinkSave2--
+--Output from testDrinkSaveAndUpdate--
+--Output from testDrinkSaveAndDelete--
+--Output from testNegativeDrinkSave--
+--Output from testDrinkDto--
+

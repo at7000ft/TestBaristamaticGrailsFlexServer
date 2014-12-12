@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="dsday3636" id="0" name="DrinkIntegrationTests" package="com.baristamatic.domain" tests="6" time="156.65" timestamp="2011-01-21T00:18:40">
+      <properties />
+
+      <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testDrinkSave" time="0.359" />
+
+      <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testDrinkSave2" time="0.047" />
+
+      <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testDrinkSaveAndUpdate" time="0.0" />
+
+      <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testDrinkSaveAndDelete" time="0.203" />
+
+      <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testNegativeDrinkSave" time="0.031" />
+
+      <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testDrinkDto" time="155.994" />
+
+      <system-out><![CDATA[--Output from testDrinkSave--
+--Output from testDrinkSave2--
+--Output from testDrinkSaveAndUpdate--
+--Output from testDrinkSaveAndDelete--
+--Output from testNegativeDrinkSave--
+--Output from testDrinkDto--
+testDrinkDto: starting
+areIngredientsAvailable for sugar needs 1  cntAvailable - 10
+
+areIngredientsAvailable for coffee needs 3  cntAvailable - 1
+
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testDrinkSave--
+--Output from testDrinkSave2--
+--Output from testDrinkSaveAndUpdate--
+--Output from testDrinkSaveAndDelete--
+--Output from testNegativeDrinkSave--
+--Output from testDrinkDto--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="dsday3636" id="1" name="InventoryIntegrationTests" package="com.baristamatic.domain" tests="3" time="0.25" timestamp="2011-01-21T00:21:17">
+      <properties />
+
+      <testcase classname="com.baristamatic.domain.InventoryIntegrationTests" name="testInventoryEntry" time="0.094" />
+
+      <testcase classname="com.baristamatic.domain.InventoryIntegrationTests" name="testAll" time="0.078" />
+
+      <testcase classname="com.baristamatic.domain.InventoryIntegrationTests" name="testInventoryEntryDto" time="0.063" />
+
+      <system-out><![CDATA[--Output from testInventoryEntry--
+--Output from testAll--
+--Output from testInventoryEntryDto--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testInventoryEntry--
+--Output from testAll--
+--Output from testInventoryEntryDto--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="dsday3636" id="2" name="JunkTests" package="com.baristamatic.domain" tests="1" time="0.016" timestamp="2011-01-21T00:21:17">
+      <properties />
+
+      <testcase classname="com.baristamatic.domain.JunkTests" name="testSomething" time="0.016" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

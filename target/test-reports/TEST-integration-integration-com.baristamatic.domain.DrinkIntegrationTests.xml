@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="dsday3636" name="com.baristamatic.domain.DrinkIntegrationTests" tests="6" time="156.65" timestamp="2011-01-21T00:18:40">
+  <properties />
+  <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testDrinkSave" time="0.359" />
+  <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testDrinkSave2" time="0.047" />
+  <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testDrinkSaveAndUpdate" time="0.0" />
+  <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testDrinkSaveAndDelete" time="0.203" />
+  <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testNegativeDrinkSave" time="0.031" />
+  <testcase classname="com.baristamatic.domain.DrinkIntegrationTests" name="testDrinkDto" time="155.994" />
+  <system-out><![CDATA[--Output from testDrinkSave--
+--Output from testDrinkSave2--
+--Output from testDrinkSaveAndUpdate--
+--Output from testDrinkSaveAndDelete--
+--Output from testNegativeDrinkSave--
+--Output from testDrinkDto--
+testDrinkDto: starting
+areIngredientsAvailable for sugar needs 1  cntAvailable - 10
+
+areIngredientsAvailable for coffee needs 3  cntAvailable - 1
+
+]]></system-out>
+  <system-err><![CDATA[--Output from testDrinkSave--
+--Output from testDrinkSave2--
+--Output from testDrinkSaveAndUpdate--
+--Output from testDrinkSaveAndDelete--
+--Output from testNegativeDrinkSave--
+--Output from testDrinkDto--
+]]></system-err>
+</testsuite>

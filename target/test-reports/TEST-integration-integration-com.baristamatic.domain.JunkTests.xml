@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="dsday3636" name="com.baristamatic.domain.JunkTests" tests="1" time="0.016" timestamp="2011-01-21T00:21:17">
+  <properties />
+  <testcase classname="com.baristamatic.domain.JunkTests" name="testSomething" time="0.016" />
+  <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+  <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+</testsuite>

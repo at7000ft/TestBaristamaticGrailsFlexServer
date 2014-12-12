@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springactionscript.org/schema/objects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:messaging="http://www.springactionscript.org/schema/messaging" xmlns:util="http://www.springactionscript.org/schema/util"
+   xmlns:rpc="http://www.springactionscript.org/schema/rpc"
+   xsi:schemaLocation="
+      http://www.springactionscript.org/schema/objects http://www.springactionscript.org/schema/objects/spring-actionscript-objects-1.0.xsd
+      http://www.springactionscript.org/schema/messaging http://www.springactionscript.org/schema/messaging/spring-actionscript-messaging-1.0.xsd
+      http://www.springactionscript.org/schema/rpc http://www.springactionscript.org/schema/rpc/spring-actionscript-rpc-1.0.xsd
+      http://www.springactionscript.org/schema/util http://www.springactionscript.org/schema/util/spring-actionscript-util-1.0.xsd">
+
+   <!-- Copied to bin-debug on build -->
+
+   <!-- Long RemoteObject Declaration -->
+   <!-- <object id="channelSet" class="mx.messaging.ChannelSet"> -->
+   <!-- <method-invocation name="addChannel"> -->
+   <!-- <arg> -->
+   <!-- <object id="amfChannel" class="mx.messaging.channels.AMFChannel"> -->
+   <!-- <property name="url" -->
+   <!-- value="http://localhost:8080/TestBaristamaticGSFServer/messagebroker/amf" /> -->
+   <!-- </object> -->
+   <!-- </arg> -->
+   <!-- </method-invocation> -->
+   <!-- </object> -->
+<!---->
+   <!-- <object id="baristaRemoteObject" class="mx.rpc.remoting.RemoteObject"> -->
+   <!-- <property name="channelSet" ref="channelSet" /> -->
+   <!-- <property name="destination" value="baristaService" /> -->
+   <!-- <property name="showBusyCursor" value="true" /> -->
+   <!-- </object> -->
+<!---->
+   <!-- <object id="baristaService" class="repository.BaristaServiceRemoteObject"> -->
+   <!-- <constructor-arg ref="baristaRemoteObject" /> -->
+   <!-- </object> -->
+
+
+   <!-- Shorter RemoteObject Declaration, used for remote communication -->
+   <object id="remoteObject" class="mx.rpc.remoting.mxml.RemoteObject" abstract="true">
+      <property name="endpoint"
+         value="http://localhost:8080/TestBaristamaticGrailsFlexServer/messagebroker/amf" />
+      <property name="showBusyCursor" value="true" />
+   </object>
+
+   <object id="baristaRemoteObject" parent="remoteObject">
+      <property name="destination" value="baristaService" />
+   </object>
+
+   <object id="baristaService" class="repository.BaristaServiceRemoteObject">
+      <constructor-arg ref="baristaRemoteObject" />
+   </object>
+
+   <!-- To run standalone using BaristaServiceMemory -->
+<!--    <object id="baristaService" class="repository.BaristaServiceMemory"> -->
+<!--    </object> -->
+
+   <!-- Shortest RemoteObject Declaration (but doesn't work) -->
+   <!-- <object id="baristaService" class="repository.BaristaServiceRemoteObject"> -->
+   <!-- <constructor-arg> -->
+   <!-- <rpc:remote-object -->
+   <!-- endpoint="http://localhost:8080/TestBaristamaticGroovySpringFlexServer/messagebroker/amf" -->
+   <!-- destination="baristaService" show-busy-cursor="true" /> -->
+   <!-- </constructor-arg> -->
+   <!-- </object> -->
+
+
+
+   <!-- <object id="baristaService" class="repository.BaristaServiceMemory" /> -->
+
+   <!-- ApplicationModel singleton is autowired into all views displaying data. And loaded into ApplicationController -->
+   <object id="appModel" class="controllers.ApplicationModel" />
+
+   <object id="applicationController" class="controllers.ApplicationController">
+      <constructor-arg ref="baristaService" />
+      <constructor-arg ref="appModel" />
+   </object>
+
+   <!-- Required to autowire a stage component (view) -->
+   <object id="autowiringStageProcessor" class="org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor" />
+
+</objects>
